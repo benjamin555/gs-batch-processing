@@ -30,7 +30,7 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
 				(rs, row) -> new Person(
 					rs.getString(1),
 					rs.getString(2))
-			).forEach(person -> log.info("Found <" + person + "> in the database."));
+			).forEach(person -> log.info("SP Found <" + person + "> in the database."));
 		}
 	}
 }
